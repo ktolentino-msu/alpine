@@ -9,14 +9,4 @@ title: 11ty Boilerplate
      <h1><span x-text="currentName"></span> is volunteered as tribute</h1>
 </div>
 
-<script>
-  function nameGenerator() {
-    return {
-      names: ['Katniss','Peeta','Gale','Haymitch','Primrose','Cato','Effie','Finnick','Cinna','President Snow'],
-      currentName: '',
-      pickName() {
-        this.currentName = this.names[Math.floor(Math.random() * this.names.length)]
-      }
-    }
-  }
-</script>
+
