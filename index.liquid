@@ -4,7 +4,9 @@ title: 11ty Boilerplate
 ---
 
 <h1><span x-data='name'><strong></strong></span> is volunteered as tribute</h1>
-<div x-data="{name: 'jeff'}">
+<div x-data="{
+  names: ['Katniss','Peeta','Gale','Haymitch','Primrose','Cato','Effie','Finnick','Cinna','President Snow'],
+  }>
     <button @click="">Nominate a New Tribute</button>
 </div>
 <img alt="pine" src="/images/pine.png" width="50" />
