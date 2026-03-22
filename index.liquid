@@ -3,10 +3,14 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 
-<h1><span x-data='name'><strong></strong></span> is volunteered as tribute</h1>
+
 <div x-data="{
   names: ['Katniss','Peeta','Gale','Haymitch','Primrose','Cato','Effie','Finnick','Cinna','President Snow'],
-  }>
-    <button @click="">Nominate a New Tribute</button>
+  currentName: '',
+  pickName() {
+    this.currentName = this.names[Math.floor(Math.random() * this.names.length)]
+  }"}>
+     <h1><span x-text="currentName"><strong></strong></span> is volunteered as tribute</h1>
+    <button @click="pickName()">Nominate a New Tribute</button>
 </div>
 <img alt="pine" src="/images/pine.png" width="50" />
