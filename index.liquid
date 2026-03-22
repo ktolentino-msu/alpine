@@ -4,9 +4,9 @@ title: 11ty Boilerplate
 ---
 
 
-<div x-data="nameGenerator()">
-     <button @click="pickName()">Choose a Tribute</button>
+<div x-data="nameGenerator()" class="text-center">
      <h1><strong><span x-text="currentName"></span></strong> is volunteered as tribute</h1>
+     <button @click="pickName()" class="btn btn-primary">Choose a Tribute</button>
 </div>
 
 <script>
