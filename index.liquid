@@ -6,14 +6,14 @@ title: 11ty Boilerplate
 
 <div x-data="nameGenerator()">
      <button @click="pickName()">Choose a Tribute</button>
-     <h1><span x-text="currentName"></span> is volunteered as tribute</h1>
+     <h1><strong><span x-text="currentName"></span></strong> is volunteered as tribute</h1>
 </div>
 
 <script>
   function nameGenerator() {
     return {
       names: ['Katniss','Peeta','Gale','Haymitch','Primrose','Cato','Effie','Finnick','Cinna','President Snow'],
-      currentName: '',
+      currentName: 'Someone',
       pickName() {
         this.currentName = this.names[Math.floor(Math.random() * this.names.length)]
       }
